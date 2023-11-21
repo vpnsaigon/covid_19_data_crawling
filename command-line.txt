@@ -1,0 +1,7 @@
+scrapy startproject covid19
+cd covid19
+scrapy genspider covid 'https://web.archive.org/web/20210907023426/htttps://ncov.moh.gov.vn/vi/web/guest/dong-thoi-gian'
+
+rm dataset.json
+scrapy crawl covid -o dataset.json
+
